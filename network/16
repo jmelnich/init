@@ -1,0 +1,4 @@
+# Make the 46.19.122.85 address reroute to intra.42.fr
+
+To make redirection, the new rule should be added to hosts file.
+Form [ip address][name], so --> add the line: [46.19.122.85 intra.42.fr]

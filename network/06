@@ -1,7 +1,7 @@
-# Get the complete path of the file that contains the IP address of the DNS server you’re using
+# Get the complete path of the file that contains the IP address of the 
+# DNS server you’re using
 
-Run command:
-cat/etc/resolv.conf
+Run command [cat/etc/resolv.conf]
 It will generate resolv.conf file.
 To get nameserver value only, use:
 cat/etc/resolv.conf | grep "nameserver" | cut -d ' ' -f2

@@ -1,0 +1,8 @@
+# Use the output of the previous command (traceroute slash16.org) to find the 
+# name and IP address of the device that makes the link between you
+# (local network) and the outside world
+
+# Me is my router address on the line 1. In this case 10.113.254.254
+# To get it, simply run the following command:
+
+traceroute slash16.org | sed '2,/end string pattern/d'

@@ -1,0 +1,4 @@
+# What file contains the local DNS entries?
+
+These entries are stored in a file named hosts that is in etc directory.
+Run command [cat /etc/hosts] to see them.

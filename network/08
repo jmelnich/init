@@ -1,0 +1,16 @@
+# Find the provider of slash16.org
+
+# Ok, there are 3 steps to find provider of the website (who hosts it).
+# 1) Use ping to find the IP address.
+# 2) Use WHOIS to find the host information.
+# 3) Use a dedicated service to look up details.
+
+# Ping — A tool that will return the IP address of the web server:
+ping slash16.org
+
+# In the case with slash16.org, the result is 13.32.118.193
+# WHOIS — A lookup that can tell who is hosting my domain, where it was
+# registered and what the Domain Name Server is.
+# Let's get to the http://whoisinfo.guru/ip-whois/ and check the ip we got
+# from ping. 
+# We can see from 'Organization' field that ip belongs to Amazon Technologies Inc.
