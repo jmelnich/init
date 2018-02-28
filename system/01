@@ -1,0 +1,4 @@
+# In what file can you find the installed version of your Debian?
+
+It's in debian_version file. Run [cat /etc/debian_version]
+

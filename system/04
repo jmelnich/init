@@ -1,0 +1,6 @@
+# What command gives you the time since your system was last booted?
+
+# Command [who -b] gives the time when it was booted, [uptime] gives the amount 
+of time it is on.
+
+uptime
