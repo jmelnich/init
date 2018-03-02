@@ -1,0 +1,4 @@
+# With the previous command, forbid all others
+
+sudo iptables -A FORWARD -p tcp -s 10.0.0.0/8 -j ACCEPT
+sudo iptables -P INPUT DROP

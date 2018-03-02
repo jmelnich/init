@@ -1,0 +1,7 @@
+# Find the command which gives the list of firewall rules
+
+# As a short
+sudo iptables -S
+
+# As a full
+sudo iptables -L
