@@ -24,9 +24,10 @@ scripts that can be useful for SysAdmins on a daily basis.
 You must use terminal commands only to solve all the exercices in this subject.
 There are three types of questions in this project. You can identify the type of answer
 expected thanks to a color code:
-In blue : a command
-In green : a command output
-<span style="color:red"> In red : a deduction, written in your own words </span>
+* In blue : a command
+* In green : a command output
+* In red : a deduction, written in your own words
+
 • Create a folder for each part of this subject at the root of your repository. These
 folders should be named network, system and scripts. Write your answers in a
 file named after the number of the question, over two digits. For instance : The
