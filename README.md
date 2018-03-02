@@ -1,6 +1,6 @@
 # init
-This is a project from school 42. It will give the opportunity to discover system and network basic commands, 
-many of the services used on a server machine, as well as a few ideas of scripts that can be useful for SysAdmins on a 
+This is a project from school 42. It will give the opportunity to discover system and network basic commands,
+many of the services used on a server machine, as well as a few ideas of scripts that can be useful for SysAdmins on a
 daily basis.
 
 # Introduction
@@ -26,7 +26,7 @@ There are three types of questions in this project. You can identify the type of
 expected thanks to a color code:
 In blue : a command
 In green : a command output
-In red : a deduction, written in your own words
+<span style="color:red"> In red : a deduction, written in your own words </span>
 • Create a folder for each part of this subject at the root of your repository. These
 folders should be named network, system and scripts. Write your answers in a
 file named after the number of the question, over two digits. For instance : The
