@@ -1,5 +1,4 @@
 # With the previous command, authorize only IP addresses from 10.0.0.0/8 to connect
 # to your system
 
-sudo iptables -A INPUT -s 10.0.0.0 -i eth0 -p tcp -j ACCEPT
-sudo iptables -A INPUT -s 10.0.0.0 -i eth0 -p udp -j ACCEPT
+sudo iptables -A INPUT -s 10.0.0.0/8 -j ACCEPT
