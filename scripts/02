@@ -2,4 +2,6 @@
 # and then logs everything in a file named /var/log/update_script.log.
 # Create a scheduled task for this script, once per week at 4 AM.
 
-echo "* 4 * * * 0 apt-get -y update && apt-get -y upgrade >>sudo /var/log/update_script.log" >> sudo /etc/crontab
+
+
+sudo bash -c 'echo "* 4 * * 0 echo "apt-get update -y && apt-get upgrade" | sudo tee /var/log/update_script.log" >> /etc/crontab'

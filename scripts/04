@@ -2,12 +2,18 @@
 # and sends an e-mail to root if the file is modified. Create a scheduled task
 # to run this script everyday at midnight.
 
-crontab -l > cronfile
-echo "0 0 * * * \
-	md5sum1=\"\$(md5sum /etc/crontab | awk '{ print \$1 }')\" && \
-	md5sum2=\"\$(cat /etc/crontab.log)\" && \
-	if [ '\$md5sum1' != '\$md5sum2' ] ; then \
-		md5sum /etc/crontab | awk '{ print \$1 }' > /etc/crontab.log && \
-		echo '/etc/crontab modifier le \$(date)' | mail -s '/etc/crontab modifier' root ; fi" >> cronfile
-crontab cronfile
-rm cronfile
+#!/bash
+if [ ! -e ./check.md5 ]
+then
+	md5sum /etc/crontab > ./check.md5
+fi
+
+if [[ $(md5sum -c ./check.md5 | grep FAILED) ]]
+then 
+	echo "File was changed" | mail -s "your file was changed" root
+fi
+
+if [[ ! $(cat /etc/crontab | grep 04) ]]
+then
+	sudo bash -c 'echo "0 0 * * * bash $(pwd)/04" >> /etc/crontab'
+fi 
