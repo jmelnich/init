@@ -14,3 +14,8 @@ ping slash16.org
 # Let's get to the http://whoisinfo.guru/ip-whois/ and check the ip we got
 # from ping. 
 # We can see from 'Organization' field that ip belongs to Amazon Technologies Inc.
+
+# Alternatively (without googling):
+# nslookup slash16.org | grep "Address"
+# take the ip and use it as [whois ip] 
+# We can see from 'Organization' field that ip belongs to Amazon Technologies Inc.

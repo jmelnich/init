@@ -5,6 +5,6 @@
 # It will generate resolv.conf file.
 # To get nameserver value only, use:
 
-cat/etc/resolv.conf | grep "nameserver" | cut -d ' ' -f2
+cat /etc/resolv.conf | grep "nameserver" | cut -d ' ' -f2
 
 # It will show the nameserver value only, for instance, 10.51.1.253

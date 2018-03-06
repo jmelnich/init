@@ -3,3 +3,5 @@
 # Use the comand [nslookup 10.51.1.253]. Alternatively, use [host 10.51.1.253]
 # Find name which equal ns1.unit.ua
 # "ns" mean that we use DNS
+
+# [nslookup 10.51.1.253] shows us port #53 in address. It means we use DNS.

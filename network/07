@@ -1,3 +1,5 @@
 # Query an external DNS server on the slash16.org domain name (ie.: google 8.8.8.8)
+# (Depending on your perspective of the quetsion: [nslookup -type=ns slash16.org])
 
 nslookup slash16.org 8.8.4.4
+
