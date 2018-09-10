@@ -1,0 +1,3 @@
+# export variables from Char to our env
+
+eval $(docker-machine env Char)
