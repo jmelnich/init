@@ -1,0 +1,8 @@
+docker run -it --name Abathur -v $HOME/:/root -p 3000:3000 python:2-slim bash
+
+# apt-get update
+# install python-virtualenv -y
+# apt-get install python-pip -y
+# pip install Flask
+
+# pip freeze <- this one lists all installed python packages and their versions

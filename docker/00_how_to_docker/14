@@ -1,0 +1,3 @@
+# spawning-pool is used as a database
+
+docker run -d --name lair -p 8080:80 --link spawning-pool:mysql wordpress
