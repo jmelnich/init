@@ -1,8 +1,9 @@
-docker run -it --name Abathur -v $HOME/:/root -p 3000:3000 python:2-slim bash
+docker run -it --name Abathur -v $HOME:/root -p 3000:3000 python:2-slim bash
 
-# apt-get update
-# install python-virtualenv -y
-# apt-get install python-pip -y
-# pip install Flask
+# apt update
+# apt-get install -y python-pip python-dev build-essential
+# pip install flask
 
-# pip freeze <- this one lists all installed python packages and their versions
+# apt-get install nano (to paste hello world info from http://flask.pocoo.org/)
+# export FLASK_APP=/root/app.py
+# flask run -h 0.0.0.0 -p 3000
