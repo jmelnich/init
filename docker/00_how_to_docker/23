@@ -1,0 +1,5 @@
+# for isolated overlay network, specify the --internal option:
+
+docker network create --internal --driver overlay overmind
+
+# (docker network ls) - to see all networks

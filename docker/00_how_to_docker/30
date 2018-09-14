@@ -1,0 +1,3 @@
+docker service scale -d marines=20
+
+# (docker service scale ps marines) - run to see the number increased

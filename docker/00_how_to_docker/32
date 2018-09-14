@@ -1,0 +1,3 @@
+# -f, --force — Force the removal of a running container
+
+docker rm -f $(docker ps -a --quiet)
