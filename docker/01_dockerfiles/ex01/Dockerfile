@@ -1,8 +1,9 @@
 FROM debian
 LABEL maintainer="imelnych"
+RUN apt-get update -y
 
-RUN apt-get update && \
-	apt-get install -y wget p7zip-full \
+#DEPENDENCIES
+RUN	apt-get install -y wget p7zip-full \
 && wget http://dl.4players.de/ts/releases/3.0.12.3/teamspeak3-server_linux_amd64-3.0.12.3.tar.bz2 \
 &&  7z x teamspeak3-server_linux_amd64-3.0.12.3.tar.bz2 \
 && tar xf teamspeak3-server_linux_amd64-3.0.12.3.tar

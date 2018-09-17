@@ -1,0 +1,3 @@
+# ln -s ../../tmp/.docker .docker
+mv ~/.docker ~/dd && docker-machine create --driver virtualbox Char && eval $(docker-machine env Char) && mv ~/.docker ~/../../tmp 
+&& mv ~/dd ~/.docker
