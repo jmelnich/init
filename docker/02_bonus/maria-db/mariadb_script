@@ -1,0 +1,11 @@
+# run MariaDB container on background
+docker run --name mydb -e MYSQL_ROOT_PASSWORD=secret -d mariadb;
+
+
+# run another conteiner linked to mydb
+docker run -it --name myapp --link mydb:mysql ubuntu
+
+#### run #####
+# apt-get update
+# apt-get install mysql-client -y
+# mysql -h mydb -uroot -psecret

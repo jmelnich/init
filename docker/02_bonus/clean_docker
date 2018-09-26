@@ -1,0 +1,6 @@
+docker stop $(docker ps -a -q);
+docker rm $(docker ps -a -q);
+# docker rmi $(docker images);
+
+#### Stop all process of docker ####
+#kill $(ps aux | grep "docker" | grep -v 'grep'| grep -v 'root' | sed 's/ * / /g'| cut -d ' ' -f 2)
